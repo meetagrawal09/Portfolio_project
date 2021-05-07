@@ -127,7 +127,20 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+
+# where to look for static files in our project
+
+STATICFILES_DIRS =[
+    os.path.join(BASE_DIR,'portfolio/static/')
+]
+
+
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
+
 STATIC_URL = '/static/'
+
+# we need to run one command which moves around our project and collects all the static files we have
+
 
 # this specifies where the media files are uploaded to 
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
