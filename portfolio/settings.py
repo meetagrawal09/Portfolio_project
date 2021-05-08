@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     # we register our app here
     'jobs.apps.JobsConfig',
     'blog.apps.BlogConfig',
+    'chart.apps.ChartConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
